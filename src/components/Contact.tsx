@@ -48,10 +48,12 @@ export const Contact: React.FC<ContactProps> = ({ contact }) => {
       
       <Flex gap="m" wrap horizontal="center">
         <Button
-          href={`mailto:${contact.email}`}
+          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contact.email)}&su=Hello from your portfolio&body=I'd like to get in touch with you.`}
           variant="primary"
           size="m"
           prefixIcon="email"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             transition: "all 0.2s ease",
           }}
