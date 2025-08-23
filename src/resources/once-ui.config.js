@@ -183,7 +183,7 @@ const schema = {
 // social links
 const sameAs = {
   threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
+  linkedin: "https://www.linkedin.com/in/gaurav-barhate-8538a1358",
   discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 

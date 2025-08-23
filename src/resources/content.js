@@ -18,7 +18,7 @@ const contact = {
   title: "Get in Touch",
   description: "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and development.",
   email: person.email,
-  linkedin: "https://www.linkedin.com/company/once-ui/",
+  linkedin: "https://www.linkedin.com/in/gaurav-barhate-8538a1358",
   github: "https://github.com/GBarhate16?tab=repositories",
 };
 
@@ -33,7 +33,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/gaurav-barhate-8538a1358",
   },
   // {
   //   name: "Threads",
@@ -43,7 +43,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(person.email)}&su=Hello from your portfolio&body=I'd like to get in touch with you.`,
   },
 ];
 
@@ -79,10 +79,7 @@ const about = {
   avatar: {
     display: true,
   },
-  calendar: {
-    display: true,
-    link: "https://cal.com",
-  },
+
   intro: {
     display: true,
     title: "Introduction",
