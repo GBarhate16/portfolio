@@ -1,0 +1,43 @@
+---
+title: "URL Shortener & QR Generator"
+publishedAt: "2025-08-23"
+summary: "A modern, production-ready SaaS application combining powerful URL shortening with QR code generation, enriched by real-time tracking, branded domains, and an interactive analytics dashboard—engineered to deliver efficiency, insights, and a smooth user experience."
+images:
+  - "/images/projects/url_qr.png"
+  - "/images/projects/url_qr_dashboard.png"
+team:
+  - name: "Gaurav Barhate"
+    role: "Software Developer"
+    avatar: "/images/avatar.jpg"
+link: "https://url-shorten-qr-generator-79qo.vercel.app"
+---
+
+## Overview
+
+This project is a full-stack SaaS application that provides URL shortening and QR code generation in a single platform. It was designed to simplify link management while offering real-time analytics, branded links, and responsive design. By combining a robust Django backend with a modern Next.js frontend, the system ensures scalability, security, and an intuitive user experience.
+
+## Key Features
+
+- **URL Shortening**: Create secure, custom, branded short links.
+- **QR Code Generation**: Generate QR codes for links instantly.
+- **Real-time Analytics**: Track clicks, devices, browsers, referrers, and geographic data.
+- **Interactive Dashboard**: Visualize analytics through charts and tables.
+- **User Authentication**: JWT-based login and user management.
+- **Dark/Light Mode & Responsive UI**: Optimized for all devices with theme switching.
+- **WebSocket Integration**: Live updates using Django Channels.
+
+## Technologies Used
+
+- **Backend**: Django, Django REST Framework, PostgreSQL, Redis (optional), Django Channels, JWT Authentication.
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS, Recharts, SWR, Next-Themes.
+- **DevOps/Deployment**: GitHub Actions, Render (backend), Vercel/Netlify (frontend), Gunicorn.
+
+## Challenges and Learnings
+
+Ensuring real-time analytics required integrating WebSockets and optimizing queries for performance. Building a clean API contract between Django and Next.js taught the importance of consistent data handling. Designing an intuitive dashboard with charts pushed me to balance data complexity with visual simplicity. Learned how to configure secure deployments with environment variables, JWT, and HTTPS enforcement. Optimizing the app for scalability involved experimenting with caching, database pooling, and background tasks.
+
+## Outcome
+
+The project resulted in a production-ready SaaS platform that reduces friction in link sharing and tracking. It provides users with powerful analytics and easy link/QR code management, while the modular architecture makes it easy to extend with new features. This strengthened my skills in building scalable full-stack applications and deploying them with industry best practices.
+
+---

@@ -1,0 +1,128 @@
+@use "../breakpoints.scss" as breakpoints;
+
+.hover {
+    transition: var(--transition-micro-medium);
+
+    &:hover {
+        transform: translateX(var(--static-space-4));
+    }
+}
+
+.avatar {
+    position: sticky;
+    height: fit-content;
+    top: var(--static-space-64);
+}
+
+/* Text justification for all screen types */
+.justifiedText {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+}
+
+.justifiedHeading {
+    text-align: justify !important;
+}
+
+.justifiedList {
+    text-align: justify !important;
+}
+
+.justifiedListItem {
+    text-align: justify !important;
+}
+
+/* Mobile-first responsive design with text justification */
+@media (max-width: 768px) {
+    .mobileContainer {
+        padding: var(--static-space-16) !important;
+        margin: 0 !important;
+        text-align: justify !important;
+    }
+    
+    .mobileList {
+        padding-left: var(--static-space-20) !important;
+        margin: var(--static-space-8) 0 !important;
+        text-align: justify !important;
+    }
+    
+    .mobileListItem {
+        margin-bottom: var(--static-space-8) !important;
+        text-align: justify !important;
+        padding: 0 !important;
+        text-indent: 0 !important;
+    }
+    
+    .workExperience {
+        .companyDate {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--static-space-8);
+            text-align: justify !important;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mobileContainer {
+        padding: var(--static-space-12) !important;
+        margin: 0 !important;
+        text-align: justify !important;
+    }
+    
+    .mobileList {
+        padding-left: var(--static-space-16) !important;
+        margin: var(--static-space-6) 0 !important;
+    }
+    
+    .mobileListItem {
+        margin-bottom: var(--static-space-6) !important;
+    }
+}
+
+/* Technical skills responsive grid layout */
+.technicalSkills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--static-space-24);
+    width: 100%;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--static-space-12);
+}
+
+/* Mobile: Always 2 skills per row for all mobile devices */
+@media (max-width: 768px) {
+    .technicalSkills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--static-space-16);
+    }
+}
+
+/* Desktop: 4 skills per row (default) */
+@media (min-width: 769px) {
+    .technicalSkills {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--static-space-24);
+    }
+}
+
+@media (max-width: breakpoints.$s) {
+    .avatar {
+        top: auto;
+    }
+
+    .textAlign {
+        text-align: center;
+    }
+
+    .blockAlign {
+        align-self: center;
+    }
+}
