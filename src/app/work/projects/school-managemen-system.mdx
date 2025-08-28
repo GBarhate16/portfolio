@@ -1,0 +1,47 @@
+---
+title: "LearnSync – School Management System"
+publishedAt: "2025-08-28"
+summary: "A modern school management platform with a Next.js frontend and Express/Prisma API, offering user auth, schools, members, subjects, assignments, attendance, and file uploads with a clean UI and robust DX."
+images:
+  - "/images/projects/school1.png"
+  - "/images/projects/school2.png"
+  - "/images/projects/school3.png"
+team:
+  - name: "Gaurav Barhate"
+    role: "Software Developer"
+    avatar: "/images/avatar.jpg"
+link: "https://school-management-system-henna.vercel.app/"
+---
+
+## Overview
+
+LearnSync is a full‑stack School Management System that streamlines daily academic operations. It provides a clean, responsive UI for administrators, teachers, and students to manage schools, users, groups, subjects, assignments, attendance, and documents. The app uses a Next.js 15 frontend and a Node.js/Express API with Prisma and PostgreSQL, delivering a fast, scalable, and maintainable experience.
+
+## Key Features
+
+- **User Authentication**: Email/password with JWT cookies; optional Google OAuth implicit flow.
+- **Schools & Members**: Create schools, invite members, assign roles (ADMIN, TEACHER, STUDENT).
+- **Groups & Subjects**: Organize users into groups; CRUD subjects and assign members.
+- **Assignments**: Create and manage assignments; submission and grading scaffolding.
+- **Attendance**: Session management, device credentials, and attendance logs.
+- **File Uploads**: Cloudinary integration for documents and media.
+- **Protected Routes**: Middleware-enforced access based on presence of JWT cookie.
+- **Modern UI/UX**: Tailwind CSS, Radix UI, tables, filters, dialogs, and toasts.
+
+## Technologies Used
+
+- **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS 4, TanStack Query, Zod, Radix UI.
+- **Backend**: Node.js, Express, Prisma ORM, PostgreSQL.
+- **Auth**: JWT (cookie), optional Google OAuth (implicit flow).
+- **Storage**: Cloudinary for uploads.
+- **Tooling**: ESLint, Prettier, Vitest.
+
+## Challenges and Learnings
+
+Designing role‑aware UX and protecting app routes required a clean middleware approach and consistent JWT handling across the stack. Building a reliable OAuth implicit flow meant carefully coordinating the frontend callback handler with backend token exchange and cookie storage. Modeling entities for schools, members, subjects, and assignments in Prisma highlighted the value of explicit relations and selective queries for performance. Investing in component primitives (tables, dialogs, forms) improved maintainability and developer velocity.
+
+## Outcome
+
+The result is a production‑ready school platform with a strong foundation for growth. It simplifies administration and collaboration, with an approachable UI and a type‑safe, testable API. The modular architecture makes it straightforward to extend features like richer grading workflows, notifications, or analytics while keeping the codebase clean and scalable.
+
+

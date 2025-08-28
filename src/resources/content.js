@@ -56,8 +56,8 @@ const home = {
   headline: "Crafting scalable solutions across front-end and back-end.",
   featured: {
     display: true,
-    title: "Recent project: URL Shortener & QR Generator  ",
-    href: "/work/url-qr",
+    title: "Recent project: School Management System  ",
+    href: "/work/school-managemen-system",
   },
   subline: (
     <>
